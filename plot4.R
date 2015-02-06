@@ -10,7 +10,7 @@ setwd("C:\\Users\\Moira\\ExData_Plotting1")
 library(datasets)
 
 # read in the data to a data table
-DT <- read.table("./data/household_power_consumption.txt", sep=";", header=TRUE, na.strings="?",colClasses=c("character","character","numeric","numeric","numeric","numeric","numeric","numeric"))
+DT <- read.table("C:/Users/Moira/Documents/DSClass/DS4/data/household_power_consumption.txt", sep=";", header=TRUE, na.strings="?",colClasses=c("character","character","numeric","numeric","numeric","numeric","numeric","numeric"))
 DT <- DT[(DT$Date == '1/2/2007') | (DT$Date == '2/2/2007'),]
 
 # convert the columns to date type and time type
